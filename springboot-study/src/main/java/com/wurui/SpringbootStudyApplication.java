@@ -16,9 +16,17 @@ public class SpringbootStudyApplication {
 	@Value("${my.name}")
 	private String myName;
 
+	@Autowired
+	private HelloService helloService;
+
 	@RequestMapping("/")
 	String index(){
 		return "hello spring boot,hi :" + myName + ",author obj:" + authorSettings;
+	}
+
+	@RequestMapping("/hello")
+	String helloService(){
+		return "helloService:" + helloService.getMsg();
 	}
 
 	public static void main(String[] args) {

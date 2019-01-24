@@ -1,0 +1,4 @@
+com\wurui\App.class
+com\wurui\HelloServiceProperties.class
+com\wurui\HelloService.class
+com\wurui\HelloServiceAutoConfiguration.class
