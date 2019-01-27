@@ -19,10 +19,10 @@ public class SpringbootStudyApplication {
 	@Autowired
 	private HelloService helloService;
 
-	@RequestMapping("/")
-	String index(){
-		return "hello spring boot,hi :" + myName + ",author obj:" + authorSettings;
-	}
+//	@RequestMapping("/")
+//	String index(){
+//		return "hello spring boot,hi :" + myName + ",author obj:" + authorSettings;
+//	}
 
 	@RequestMapping("/hello")
 	String helloService(){
